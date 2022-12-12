@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>PACKAGE CHANGER</title>
+  </head>
+  <body>
+    <div class="text-box">
+      <textarea name="textarea" id="textarea" cols="10" rows="18" onchange="getWriteValue();"></textarea>
+    </div>
+    <div class="package-option">
+      <div class="botton-div">
+        <button
+          id="start-button"
+          class="button-5"
+          value="hi"
+          role="button"
+          onclick="getStartValue();">
+          START
+        </button>
+      </div>
+
+        <select  id="list" onchange="getSelectValue();">
+          <option value="without-sweedn">Without Sweedn</option>
+          <option value="hn-package">HN Package </option>
+          <option value="full-package">Full Package</option>
+          <option value="platinum-package">Platinum Package</option>
+          <option value="new-box-package">New Box Package</option>
+          <option value="diamond-package">Diamond Package</option>
+
+        </select>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
